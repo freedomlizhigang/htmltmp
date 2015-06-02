@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>视频兼容测试</title>
+		<meta name="author" content="李潇喃：www.muzisheji.com" />
+		<!-- IE最新兼容 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 国产浏览器高速 -->
+		<meta name="renderer" content="webkit">
+		<!-- 移动设备禁止缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="icon" type="image/png" href="favicon.png">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="app.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Mzsj" />
+		<link rel="apple-touch-icon-precomposed" href="app.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="app.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<!--[if gt IE 9]>
+		    <script src="html5.js"></script>
+		    <script src="respond.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="reset.css">
+		<script src="jquery.min.js"></script>
+	</head>
+
+	<body>
+		<video width="640" height="480" controls="true">
+		    <source src="video/video.ogv" type="video/ogg" />
+		    <source src="video/video.webm" type="video/webm" />
+		    <source src="video/video.mp4" type="video/mp4" />
+		    <object width="640" height="480" type="application/x-shockwave-flash">
+			    <param name="movie" value="video/Flvplayer.swf?vcastr_file=video.flv"> 
+			    <param name="quality" value="high">
+				<param name="allowFullScreen" value="true" />
+				<embed src="video/Flvplayer.swf?vcastr_file=video.flv" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="640" height="480" />
+			</object>
+		</video>
+	</body>
+
+</html>
