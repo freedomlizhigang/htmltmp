@@ -1,0 +1,485 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"wid",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 424.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/html"
+	],
+	"file_history":
+	[
+		"/D/wamp/www/chuanzhi/phpcms/modules/admin/functions/admin.func.php",
+		"/D/wamp/www/chuanzhi/phpcms/libs/classes/update.class.php",
+		"/D/wamp/www/chuanzhi/phpcms/base.php",
+		"/D/wamp/www/chuanzhi/phpcms/libs/functions/global.func.php",
+		"/D/wamp/www/chuanzhi/phpcms/libs/functions/iconv.func.php",
+		"/D/wamp/www/chuanzhi/phpcms/libs/functions/extention.func.php",
+		"/D/wamp/www/chuanzhi/index.php",
+		"/D/wamp/www/chuanzhi/caches/configs/version.php",
+		"/D/wamp/www/chuanzhi/js.html",
+		"/D/wamp/www/chuanzhi/en/index.html",
+		"/D/wamp/www/chuanzhi/en/js.html",
+		"/D/wamp/www/chuanzhi/.htaccess",
+		"/D/wamp/www/chuanzhi/.htaccess1",
+		"/D/wamp/www/chuanzhi/phpcms/modules/content/index.php",
+		"/D/wamp/www/chuanzhi/caches/caches_commons/caches_data/category_content_1.cache.php",
+		"/D/wamp/www/chuanzhi/caches/caches_commons/caches_data/category_content_2.cache.php",
+		"/D/wamp/www/chuanzhi/caches/caches_content/caches_data/update_url_catid-1-1.cache.php",
+		"/D/wamp/www/chuanzhi/caches/caches_commons/caches_data/model.cache.php",
+		"/D/wamp/www/chuanzhi/phpcms/modules/admin/templates/index.tpl.php",
+		"/D/wamp/www/chuanzhi/caches/configs/system.php",
+		"/D/wamp/www/chuanzhi/phpcms/modules/content/content.php",
+		"/C/Users/Administrator/Desktop/htaccess",
+		"/D/wamp/www/.htaccess",
+		"/D/wamp/www/chuanzhi/phpcms/modules/admin/index.php",
+		"/D/wamp/www/chuanzhi/phpcms/templates/en/config.php",
+		"/C/Users/Administrator/Documents/Tencent Files/854378082/FileRecv/tdjs.html",
+		"/D/Li/闫/传智/Chuanzhi/jtxwtxt.html",
+		"/D/html/index222.html",
+		"/D/迅雷下载/index.html",
+		"/D/迅雷下载/jqcool.net-jquery.slideBox/index.html",
+		"/D/迅雷下载/jqcool.net-jquery.slideBox/css/jquery.slideBox.css",
+		"/D/html/html5shiv.min.js",
+		"/D/html/html5.js",
+		"/C/Users/Administrator/AppData/Local/Temp/HZ$D.236.4505/HZ$D.236.4506/Chuanzhi/index.html",
+		"/D/html/index.html",
+		"/D/wamp/www/daxi/presentation.json",
+		"/D/wamp/www/daxi/index.html",
+		"/D/wamp/www/daxi/code/js/app.slide.starters_home.js",
+		"/D/wamp/www/daxi/setup.js",
+		"/D/wamp/www/daxi/code/js/hidemenu.js",
+		"/D/wamp/www/pikangwang/code/js/hidemenu.js",
+		"/D/wamp/www/daxi/code/css/common.css",
+		"/D/wamp/www/eda/index.html",
+		"/D/wamp/www/daxi/slides/doctor_approve.html",
+		"/D/wamp/www/daxi/code/js/app.slide.doctor_detailer_helpfull.js",
+		"/D/wamp/www/daxi/slides/doctor_detailer_helpfull.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_7.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_6.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_8.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_zuoyongjizhi.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_xifuzuoyong.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_ppi_2.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_ppi.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_moshabili.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_cudongli.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_content_1.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_content_3.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_content_2.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_16.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_14.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_15.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_content_3.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_content_2.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_17.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_content_1.html",
+		"/D/wamp/www/daxi/slides/first_line/fl_unique_role.html",
+		"/D/wamp/www/daxi/modules/analytics/analytics.js",
+		"/D/wamp/www/daxi/slides/starters_home.html",
+		"/D/wamp/www/daxi/code/js/referencemap.js",
+		"/D/wamp/www/daxi/code/js/pdflist.js",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_23.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_22.html",
+		"/D/wamp/www/daxi/slides/sdys/sdys_p_4.html",
+		"/D/wamp/www/daxi/code/css/dzfl.css",
+		"/D/wamp/www/daxi/slides/prevention_nsaids/pn_protects_mucosal.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_zongshijian.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_bingyin.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_zhiaizuoyong.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_fashenglv.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_xiaojie.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_zhengxiangguan.html",
+		"/D/wamp/www/daxi/slides/dzfl/dzfl_manxingweiyan.html",
+		"/D/wamp/www/daxi/code/css/home.css",
+		"/D/wamp/www/daxi/code/css/first_line.css",
+		"/D/wamp/www/daxi/all.css",
+		"/D/wamp/www/daxi/code/css/prevention_nsaids.css",
+		"/D/wamp/www/daxi/slides/first_line/fl_relieves_symptoms.html",
+		"/D/wamp/www/daxi/slides/first_line/fl_contents_1.html",
+		"/D/wamp/www/pikangwang/code/js/pikangwang/app.slide.pkw_pinpai_ys_pk.js",
+		"/D/flashfxp/Cache/~flashfxp/3CC92A06_edit.tmp/hidemenu.js",
+		"/D/wamp/www/daxi/slides/gastric_mucosal/gm_studies_aspirin.html",
+		"/D/wamp/www/daxi/slides/prevention_nsaids/pn_sfda_approved.html",
+		"/D/wamp/www/daxi/slides/nerd_on_demand/nod_relieves_gerd.html",
+		"/D/wamp/www/daxi/slides/nerd_on_demand/nod_more_advantage.html",
+		"/D/wamp/www/daxi/code/js/animation/app.slide.fl_equals_ppis.js",
+		"/D/wamp/www/daxi/slides/nerd_on_demand/nod_equivalent_ppis.html",
+		"/D/wamp/www/daxi/code/css/nerd_on_demand.css",
+		"/D/wamp/www/daxi/slides/first_line/fl_good_safety.html",
+		"/D/wamp/www/daxi/slides/first_line/fl_comparative_studies_2.html",
+		"/D/wamp/www/daxi/slides/first_line/fl_high_toxic.html",
+		"/D/wamp/www/daxi/code/js/animation/app.slide.fl_high_toxic.js",
+		"/D/wamp/www/daxi/slides/first_line/fl_reflux_positively.html",
+		"/D/wamp/www/eda/presentation.json",
+		"/D/flashfxp/Cache/~flashfxp/BB1E7C6C_edit.tmp/presentation.json",
+		"/D/wamp/www/eda/all.css",
+		"/D/wamp/www/eda/code/js/app.slide.predefined.js",
+		"/D/wamp/www/eda/code/css/agenda.css",
+		"/D/wamp/www/eda/code/js/canesten/app.slide.canesten_vyi_three_pillars.js",
+		"/D/wamp/www/pikangwang/slides/predefined.html",
+		"/D/flashfxp/Cache/~flashfxp/063434F4_edit.tmp/presentation.json",
+		"/D/flashfxp/Cache/~flashfxp/063434F4_edit.tmp/setup.js",
+		"/D/flashfxp/Cache/~flashfxp/063434F4_edit.tmp/config.json",
+		"/D/wamp/www/eda/code/js/app.slide.doctor_detailer_helpfull.js",
+		"/D/flashfxp/Cache/~flashfxp/5481D572_edit.tmp/doctor_detailer_helpfull.html",
+		"/D/flashfxp/Cache/~flashfxp/FA716037_edit.tmp/app.slide.doctor_detailer_helpfull.js",
+		"/D/wamp/www/eda/slides/doctor_survey.html",
+		"/D/wamp/www/eda/slides/doctor_detailer_helpfull.html",
+		"/D/Li/闫/达喜/talcid_hospital/code/js/app.slide.doctor_detailer_helpfull.js",
+		"/D/Li/闫/达喜/talcid_hospital/code/js/app.slide.doctor_survey.js",
+		"/D/wamp/www/eda/code/js/app.slide.doctor_survey.js",
+		"/C/Users/Administrator/AppData/Local/Temp/HZ$D.420.1348/HZ$D.420.1351/talcid_hospital/code/js/app.slide.doctor_detailer_helpfull.js",
+		"/C/Users/Administrator/AppData/Local/Temp/HZ$D.420.1348/HZ$D.420.1350/talcid_hospital/slides/doctor_detailer_helpfull.html",
+		"/C/Users/Administrator/AppData/Local/Temp/HZ$D.420.1348/HZ$D.420.1349/talcid_hospital/presentation.json",
+		"/D/wamp/www/eda/slides/canesten/canesten_af_cover.html",
+		"/D/wamp/www/eda/slides/canesten/canesten_vyi_treatment_challenges.html",
+		"/D/wamp/www/eda/code/css/canesten/canesten_general.css",
+		"/D/wamp/www/eda/setup.js",
+		"/D/wamp/www/eda/code/js/app.slide.home.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\wamp\\www\\daxi",
+			"D:\\wamp\\www\\daxi\\code\\js",
+			"D:\\wamp\\www\\daxi\\code\\css",
+			"D:\\wamp\\www\\eda\\code",
+			"D:\\wamp\\www\\eda\\code\\css",
+			"D:\\wamp\\www\\eda\\code\\js",
+			"D:\\wamp\\www\\eda",
+			"D:\\wamp\\www\\eda\\slides",
+			"D:\\wamp\\www\\eda\\slides\\canesten",
+			"D:\\wamp\\www\\eda\\code\\css",
+			"D:\\wamp\\www\\eda",
+			"D:\\wamp\\www\\eda\\code\\js",
+			"D:\\wamp\\www\\eda\\slides\\canesten"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"url",
+			"update",
+			"check_uuid",
+			"en/",
+			"([0-9]+)",
+			"cat/([0-9]+)",
+			"$MODEL",
+			"$MODEL[$modelid]",
+			"审核",
+			"cat([0-9]+)",
+			"default",
+			"name3",
+			"“",
+			"″",
+			"”",
+			"daxi",
+			"Talcid",
+			"手机号有误，请您核对重新绑定。 ",
+			"app.menu",
+			"bayer",
+			"bayer-cross",
+			"高品质的铝碳酸镁片",
+			"李伟 等. 中国民族民间医药. 2010; 19(11): 162, 164.",
+			"Kurtz W et al. Z Gastroenterol, 1991,29:237-41",
+			"中华医学会消化病学分会. 中华消化杂志. 2013; 33(1): 5-16.",
+			"Chen SL, et al. World J Gastroenterol. 2005;11(18):2834-2837",
+			"中华医学会消化病学分会胃肠动力学组. 中华消化杂志. 2006; 26(9): 602-605.",
+			"郭伟强, 等. 中国全科医学. 2009; 12(3B): 511-513.",
+			"邢飞, 等. 浙江临床医学. 2009; 11(9): 928-930.",
+			"Szadkowski K, et al. Pol Merkur Lekarski. 2009 May;26(155):378-81",
+			"Lin MS, et al. J Formos Med Assoc. 1998 Oct;97(10):704-10.",
+			"房静远. 中华消化杂志. 2007; 27(11): 759-60.",
+			"龚珍民. 中外医疗. 2007; 22: 18.",
+			"Abraham NS. Curr Opin Gastroenterol. 2012 Nov; 28(6): 615-20.",
+			"Niklasson A, et al. Am J Gastroenterol. 2010 Jul; 105(7): 1531-7",
+			"Leonard J, et al. Am J Gastroenterol. 2007; 102: 2047–2056.",
+			"Nørsett KG, et al. Eur J Gastroenterol Hepatol. 2008 Jul; 20(7): 613-23.",
+			"聂红秀, 等. 中国民康医学. 2007; 19(10): 838-839",
+			"彭继承, 等. 医学信息. 2009; 28(8): 1576-1577.",
+			"李晓华, 等. 武警医学院学报. 2003; 12(1): 52-54",
+			"李琳. 医学信息(下旬刊). 2010; 23(2)",
+			".Abraham NS. Curr Opin Gastroenterol. 2012 Nov; 28(6): 615-20",
+			"陈维娜, 等. 世界华人消化杂志. 2010;18(28):2951-2955",
+			"Niklasson A, et al. Am J Gastroenterol. 2010 Jul; 105(7): 1531-7.",
+			"Lodato F, et al. JAMA. 2006;296:2947-2953",
+			"Leonard J, et al. Am J Gastroenterol. 2007; 102: 2047–2056.",
+			"姚洪森, 等. 中国全科医学. 2005; 7: 578-579",
+			"张石革, 等. 中国全科医学. 2002; 5(11): 913-916",
+			"于皆平, 沈志祥, 罗和生 等. 实用消化病学. 第二版. 北京: 科学出版社, 2007: 233",
+			"代素琴, 等. 牡丹江医学院学报. 2009; 30(2): 60-61",
+			"李伟 等. 中国民族民间医药. 2010; 19(11): 162, 164",
+			"陈光山. 临床研究. 2013; 11(24): 530-531",
+			"Chen H, et al. Can J Gastroenterol. 2010 Mar;24(3):197-201",
+			"许国铭, 等. 中华内科杂志. 1998; 37(9): 598-599",
+			"S-E MIEDERER, et al. Chinese Journal of Digestive Diseases. 2003;4(3):140-146",
+			"Talcid Factbook, 2003",
+			"房静远. 中华消化杂志. 2007; 27(11): 759-60",
+			"龚珍民. 中外医疗. 2007; 22: 18",
+			"Vdovychenko A. Rocz Akad Med Bialymst. 2004;49:72-4",
+			"Houghton PW, et al. Br J Surg. 1986 May;73(5):354-6",
+			"Li XB, et al. J Dig Dis. 2008 Nov;9(4):208-12",
+			"Chen SL, et al. World J Gastroenterol. 2005;11(18):2834-2837",
+			"朱爱勇,等. 中华消化杂志. 2002;22(9):530-1",
+			"中华医学会消化病学分会胃肠动力学组. 中华消化杂志. 2006; 26(9): 602-605",
+			"庄惠军, 等. 临床消化病杂志.  2010; 22(2): 123-125",
+			"郭伟强, 等. 中国全科医学. 2009; 12(3B): 511-513",
+			"谭东毅, 等. 中华消化杂志. 2002; 22(5): 313-314",
+			"张峻, 等. 世界华人消化杂志. 2009; 17(31): 3249-3254",
+			"邢飞, 等. 浙江临床医学. 2009; 11(9): 928-930",
+			"Szadkowski K, et al. Pol Merkur Lekarski. 2009 May;26(155):378-81",
+			"陈浩,等. 实用医学杂志. 2005; 21(15): 1646-7",
+			"徐肇敏. 中国处方药. 2005;44(11): 50-3",
+			"Blume, et al, Drug Safety 2006; 29 (9): 769-784",
+			"Gastric Mucosal Defense and Cytoprotection：Bench to Bedside",
+			"中华消化杂志，2008，28（5）:328～332",
+			"Dollinger HC  Eur J Gastroenterol Hepatol.1993,5(Suppl 3):133-137",
+			"AkarcaUS Current Pharmaceutical Design, 2005,11:1779-1793",
+			"Laine L. Gastrointest Endosc Clin N Am 1996",
+			"Kurata JH, et al. J Fan Pract 1997",
+			"The efficacy, safety and cost-effectiveness of hydrotalcite versus esomeprazole in on-demand therapy of NERD- a multicenter randomized, open-label studyin China",
+			"王天才,等,铝碳酸镁对反流性食管炎大鼠食道粘膜的保护机制研究华中科技大学学报（医学版）, 2003 32(2): 171-7",
+			"亚太地区胃食管反流病的处理共识：更新版. 胃肠病学2008,13(7):411-36",
+			"Havelund, T., et al., Quality of life in patients with heartburn but without esophagitis: effects of treatment with omeprazole. Am J Gastroenterol, 1999. 94(7): p. 1782-9",
+			"Lundell, L.R., et al., Endoscopic assessment of oesophagitis: clinical and functional correlates and further validation of the Los Angeles classification. Gut, 1999. 45(2): p. 172-80",
+			"林三仁，等.中国胃食管反流病共识意见.胃肠病学，2007,12(4):233-239",
+			"实用内科学第13版. p. 1965",
+			"胡品津。非糜烂性反流病研究的现状。中华消化杂志，2005，25（1）：54－6",
+			"Ang, D., D. Sifrim, and J. Tack, Mechanisms of heartburn. Nat Clin Pract Gastroenterol Hepatol, 2008. 5(7): p. 383-92",
+			"GadEl-Hak, N.A. et al Bile reflux measurement and its contribution to the severity of reflux esophagitis.Saudi J Gastroenterol, 2007. 13(4): p. 180-6",
+			"达喜SFDA药品说明书",
+			"Talcid CCDS",
+			"Clinical Expert Opinion Hydrotalcite",
+			"Lambrecht N, et al. Gut 1993,34:329~337",
+			"张冬红. 等. 中华消化杂志. 2008; 28(5): 328-332",
+			"Gastroenterology 1996;110(Suppl 4): A276.",
+			"J Physiol (Paris),2000,94:93~8",
+			"第二军医大学学报，2000,21(2):156~8",
+			"World Congress of Gastroenterology, 1986",
+			"胃肠病学，1999,4(3):137~9",
+			"Internist(Berl), 1993,34(suppl 11):1-12",
+			"Miederer SE, World Congress of Gastroenterology ,1990, Sydney",
+			"Kurtz W et al. Z Gastroenterol, 1991,29:237-41",
+			"许国铭主编.胆汁反流相关性疾病.上海科学技术出版社,2002:P93",
+			"Talcid Factbook 2003",
+			"朱爱勇，等. 慢性胃炎患者胃内24小时胆汁监测. 中华消化杂志. 2002,22（9）：530-531",
+			"Hirano, I. and J.E. ACG Practice Guidelines: Esophageal Reflux Testingr, Am J Gastroenterol, 2007. 102(3): 668-85",
+			"Sobala, G.M., et al., Reflux gastritis in the intact stomachJ Clin Pathol, 1990. 43(4):  303-6",
+			"孙菁，袁耀宗等 中华消化杂志，2010，30（9）；619-622",
+			"张德中,萧树东.中华消化杂志, 1999,19(1):53",
+			"Weingartner U,et al. Pharmazeutische Zeitung ,2002,147(50):3-7",
+			"中国慢性胃炎共识意见（2012年,上海）.中华消化杂志2013年1月第33卷第1期",
+			"中华消化杂志2013年1月第33卷第1期  Chin J Dig Endosc,January 2013,Vol,33,No.1",
+			"李兆申,许国铭等.胃黏膜损伤与保护—基础与临床:P1",
+			"Blecker U, et al.Eur J Pediatr. 1999 Jul;158(7):541-6. 2.",
+			"Talcid Factbook, 2003",
+			"龚珍民. 中外医疗. 2007; 22: 18.",
+			"Lin MS, et al. J Formos Med Assoc. 1998 Oct;97(10):704-10.",
+			"Talcid Factbook, 2003",
+			"龚珍民. 中外医疗. 2007; 22: 18.",
+			"房静远. 中华消化杂志. 2007; 27(11): 759-60.",
+			"Abraham NS. Curr Opin Gastroenterol. 2012 Nov; 28(6): 615-20.",
+			"聂红秀, 等. 中国民康医学. 2007; 19(10): 838-839.",
+			"彭继承, 等. 医学信息. 2009; 28(8): 1576-1577.",
+			"李晓华, 等. 武警医学院学报. 2003; 12(1): 52-54",
+			"李琳. 医学信息(下旬刊). 2010; 23(2): 108.",
+			"中华医学会消化病学分会. 中华消化杂志. 2013; 33(1): 5-16",
+			"Abraham NS. Curr Opin Gastroenterol. 2012 Nov; 28(6): 615-20.",
+			"陈维娜, 等. 世界华人消化杂志. 2010;18(28):2951-2955."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"cat/11",
+			"cat/([0-9]+)",
+			"en",
+			"\"",
+			"dzfl_content_2",
+			"dzfl_content_1",
+			"thisIndex_4",
+			"thisIndex_1",
+			"{APP_PATH}images",
+			"xinao"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "html.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "pika",
+		"selected_items":
+		[
+			[
+				"pika",
+				"D:\\wamp\\www\\pikangwang\\pikanwang.sublime-project"
+			],
+			[
+				"mz",
+				"D:\\wamp\\www\\wifi\\mzsj.sublime-project"
+			],
+			[
+				"pi",
+				"D:\\wamp\\www\\pikangwang\\pikanwang.sublime-project"
+			],
+			[
+				"mzsj",
+				"D:\\wamp\\www\\wifi\\mzsj.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 265.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
