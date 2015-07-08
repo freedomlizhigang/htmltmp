@@ -117,13 +117,14 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Administrator/Desktop/htmltmp/index.html",
+		"/D/flashfxp/Cache/~flashfxp/5CDBB989_edit.tmp/index.html",
 		"/D/flashfxp/Cache/~flashfxp/4777B411_edit.tmp/js.php",
 		"/D/flashfxp/Cache/~flashfxp/4777B411_edit.tmp/dome.js",
 		"/D/flashfxp/Cache/~flashfxp/4777B411.tmp/indexs.html",
 		"/C/Users/Administrator/Downloads/dome.js",
 		"/D/flashfxp/Cache/~flashfxp/CF76400B_edit.tmp/js.php",
 		"/D/flashfxp/Cache/~flashfxp/CF76400B_edit.tmp/dome.js",
-		"/C/Users/Administrator/Desktop/htmltmp/index.html",
 		"/D/flashfxp/Cache/~flashfxp/CF76400B_edit.tmp/index.php",
 		"/D/flashfxp/Cache/~flashfxp/BB7B4E71_edit.tmp/IndexController.class.php",
 		"/C/Users/Administrator/Downloads/wx_sample.php",
@@ -243,8 +244,7 @@
 		"/D/flashfxp/Cache/~flashfxp/8BB572C8_edit.tmp/list_news.html",
 		"/D/flashfxp/Cache/~flashfxp/8BB572C8_edit.tmp/list_job.html",
 		"/D/flashfxp/Cache/~flashfxp/D4915C03_edit.tmp/list_job.html",
-		"/D/flashfxp/Cache/~flashfxp/D4915C03_edit.tmp/list_news.html",
-		"/D/flashfxp/Cache/~flashfxp/13634C11_edit.tmp/style.css"
+		"/D/flashfxp/Cache/~flashfxp/D4915C03_edit.tmp/list_news.html"
 	],
 	"find":
 	{
@@ -505,9 +505,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "talent",
+		"last_filter": "tal",
 		"selected_items":
 		[
+			[
+				"tal",
+				"D:\\wamp\\www\\talent\\talent.sublime-project"
+			],
 			[
 				"talent",
 				"D:\\wamp\\www\\talent\\talent.sublime-project"

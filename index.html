@@ -39,17 +39,24 @@
 	<script src="jquery.min.js"></script>
 </head>
 
-<body onload="init()">
+<body>
+<p id="startyy">开始摇一摇啊</p>
+<p id="gls"></p>
 	<script>
-		var SHAKE_THRESHOLD = 3000;
+		var SHAKE_THRESHOLD = 300;
         var last_update = 0;
         var x = y = z = last_x = last_y = last_z = 0;
-        function init() {
-            if (window.DeviceMotionEvent) {
-                window.addEventListener('devicemotion', deviceMotionHandler, false);
-            } else {
-                alert('not support mobile event');
-            }
+        var gls = 0;
+        function startgame() {
+        	if (gls === 0 ) {
+        	// 判断是否重新开始
+	        	if (window.DeviceMotionEvent) {
+	                window.addEventListener('devicemotion', deviceMotionHandler, false);
+	            } else {
+	                alert('not support mobile event');
+	            }
+	        	setTimeout(b,5000);
+        	}
         }
         function deviceMotionHandler(eventData) {
             var acceleration = eventData.accelerationIncludingGravity;
@@ -61,20 +68,23 @@
                 y = acceleration.y;
                 z = acceleration.z;
                 var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
-
                 if (speed > SHAKE_THRESHOLD) {
-                    alert("摇动了");
-                    media.setAttribute("src", "http://211.148.5.228:8002/Pages/test/Kalimba.mp3");
-                    media.load();
-                    media.play();  
+                    gls++;
                 }
                 last_x = x;
                 last_y = y;
                 last_z = z;
             }
         }
+        function b(){
+        	document.getElementById('gls').innerHTML = gls;
+        	// 判断是否可以重新开始
+        	gls = 1;
+        }
+        window.onload = function(){
+        	document.getElementById('startyy').addEventListener('click',startgame,false);
+        };
 	</script>
-	<audio style="display:none;" id="musicBox" preload="metadata" controls src="http://211.148.5.228:8002/Pages/test/Kalimba.mp3" autoplay="false"></audio>
 </body>
 
 </html>
