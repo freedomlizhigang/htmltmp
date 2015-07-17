@@ -8,7 +8,8 @@
 	<!-- IE最新兼容 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- 国产浏览器高速/微信开发不要用 -->
-	<!-- <meta name="renderer" content="webkit"> -->
+	<!-- <meta name="renderer" content="webkit">
+	-->
 	<!-- 移动设备禁止缩放 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -34,69 +35,40 @@
 	<script src="html5.js"></script>
 	<script src="respond.js"></script>
 	<![endif]-->
-	<!-- <link rel="stylesheet" href="reset.css">
-	-->
+	 <link rel="stylesheet" href="reset.css">
+	
 	<script src="jquery.min.js"></script>
 </head>
 
 <body>
-	<script>
-		var SHAKE_THRESHOLD = 300;
-        var last_update = 0;
-        var x = y = z = last_x = last_y = last_z = 0;
-        var gls = 0;
-        function startgame() {
-        	document.getElementById('gls').innerHTML = '';
-        	if (gls === 0 ) {
-        	// 判断是否重新开始
-	        	if (window.DeviceMotionEvent) {
-	                window.addEventListener('devicemotion', deviceMotionHandler, false);
-	            } else {
-	                alert('not support mobile event');
-	            }
-	        	setTimeout(b,5000);
-        	}
-        }
-        function deviceMotionHandler(eventData) {
-            var acceleration = eventData.accelerationIncludingGravity;
-            var curTime = new Date().getTime();
-            if ((curTime - last_update) > 100) {
-                var diffTime = curTime - last_update;
-                last_update = curTime;
-                x = acceleration.x;
-                y = acceleration.y;
-                z = acceleration.z;
-                var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
-                if (speed > SHAKE_THRESHOLD) {
-                    gls++;
-                }
-                last_x = x;
-                last_y = y;
-                last_z = z;
-            }
-        }
-        function b(){
-        	document.getElementById('gls').innerHTML = gls;
-        	// 判断是否可以重新开始
-        	gls = 0;
-        }
-        window.onload = function(){
-        	if (window.DeviceMotionEvent) {
-        		document.getElementById('startyy').addEventListener('click',startgame,false);
-        		document.getElementById('yaoyiyaono').style.display = 'none';
-        	}else{
-        		document.getElementById('yaoyiyaono').style.display = 'block';
-        	}
-        };
-	</script>
-	<p id="startyy">开始摇一摇啊</p>
-	<p id="gls"></p>
-	<div id="yaoyiyaono">
-	    兄弟，如果您看到了我，说明您现在还不能摇，不是说您没有资格用我，而是：<br />
-	、如果您使用PC机的浏览器，那可就不对了，我只爱手机浏览器；<br />
-	、如果您是Android手机，那不好意思告诉你，android自带的浏览器抛弃了我，您可以用UCWeb、chrome等第三方浏览器；<br />
-	、如果您都不属于以上两种情况，那我只有告诉您：您该换手机啦！！！<br />
-	</div>
+	<style>
+	ul {width: 550px;
+		padding: 10px;
+  text-align: justify;
+  background: firebrick;
+  line-height: 0;
+  font-size: 0;
+  font-size: 12px\9; /* IE6-9 only hack */}
+	li {background: white;
+  display: inline-block;
+  font-size: 12px;
+	line-height: 1em;
+  zoom: 1;
+  *display: inline;}
+	ul:after {content: "";
+  width: 100%;
+  display: inline-block;
+
+  zoom: 1;
+  *display: inline;}
+</style>
+	<ul>
+		<li>dddd</li>
+		<li>dddd</li>
+		<li>dddd</li>
+		<li>dddd</li>
+		<li>dddd</li>
+	</ul>
 </body>
 
 </html>

@@ -118,6 +118,7 @@
 	"file_history":
 	[
 		"/C/Users/Administrator/Desktop/htmltmp/index.html",
+		"/D/flashfxp/Cache/~flashfxp/E7F2D6C7_edit.tmp/index.html",
 		"/D/flashfxp/Cache/~flashfxp/560740D8_edit.tmp/index.html",
 		"/D/flashfxp/Cache/~flashfxp/5CDBB989_edit.tmp/index.html",
 		"/D/flashfxp/Cache/~flashfxp/4777B411_edit.tmp/js.php",
@@ -243,8 +244,7 @@
 		"/D/flashfxp/Cache/~flashfxp/8AB16B1A_edit.tmp/style.css",
 		"/D/flashfxp/Cache/~flashfxp/8AB16B1A_edit.tmp/style_en.css",
 		"/D/flashfxp/Cache/~flashfxp/8BB572C8_edit.tmp/list_news.html",
-		"/D/flashfxp/Cache/~flashfxp/8BB572C8_edit.tmp/list_job.html",
-		"/D/flashfxp/Cache/~flashfxp/D4915C03_edit.tmp/list_job.html"
+		"/D/flashfxp/Cache/~flashfxp/8BB572C8_edit.tmp/list_job.html"
 	],
 	"find":
 	{
@@ -275,6 +275,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"deviceorientation",
 			"playVoice",
 			"checkJsApi",
 			"gettoken",
@@ -401,8 +402,7 @@
 			"Laine L. Gastrointest Endosc Clin N Am 1996",
 			"Kurata JH, et al. J Fan Pract 1997",
 			"The efficacy, safety and cost-effectiveness of hydrotalcite versus esomeprazole in on-demand therapy of NERD- a multicenter randomized, open-label studyin China",
-			"王天才,等,铝碳酸镁对反流性食管炎大鼠食道粘膜的保护机制研究华中科技大学学报（医学版）, 2003 32(2): 171-7",
-			"亚太地区胃食管反流病的处理共识：更新版. 胃肠病学2008,13(7):411-36"
+			"王天才,等,铝碳酸镁对反流性食管炎大鼠食道粘膜的保护机制研究华中科技大学学报（医学版）, 2003 32(2): 171-7"
 		],
 		"highlight": true,
 		"in_selection": false,
