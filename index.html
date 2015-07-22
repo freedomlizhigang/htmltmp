@@ -8,8 +8,8 @@
 	<!-- IE最新兼容 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- 国产浏览器高速/微信开发不要用 -->
-	<!-- <meta name="renderer" content="webkit">
-	-->
+	 <meta name="renderer" content="webkit">
+	
 	<!-- 移动设备禁止缩放 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -38,37 +38,22 @@
 	 <link rel="stylesheet" href="reset.css">
 	
 	<script src="jquery.min.js"></script>
+	<script>
+	$(function(){
+
+	})
+	</script>
 </head>
 
 <body>
 	<style>
-	ul {width: 550px;
-		padding: 10px;
-  text-align: justify;
-  background: firebrick;
-  line-height: 0;
-  font-size: 0;
-  font-size: 12px\9; /* IE6-9 only hack */}
-	li {background: white;
-  display: inline-block;
-  font-size: 12px;
-	line-height: 1em;
-  zoom: 1;
-  *display: inline;}
-	ul:after {content: "";
-  width: 100%;
-  display: inline-block;
-
-  zoom: 1;
-  *display: inline;}
-</style>
-	<ul>
-		<li>dddd</li>
-		<li>dddd</li>
-		<li>dddd</li>
-		<li>dddd</li>
-		<li>dddd</li>
-	</ul>
+	.action_top {width: 300px; height: 20px; background: red; margin-top: 200px; margin-left: 200px; transform:skewY(-10deg); transform-origin:left bottom; animation:actionani 0.5s linear both;}
+	@keyframes actionani{
+		0%{}
+		100%{transform:skewY(0);}
+	}
+	</style>
+	<div class="action_top"></div>
 </body>
 
 </html>
