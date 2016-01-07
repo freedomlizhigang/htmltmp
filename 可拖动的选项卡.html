@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>默认模板页面</title>
+	<meta name="author" content="李潇喃：www.muzisheji.com" />
+	<!-- IE最新兼容 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 国产浏览器高速/微信开发不要用 -->
+	 <meta name="renderer" content="webkit">
+	 
+	<!-- 移动设备禁止缩放 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- No Baidu Siteapp-->
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="images/app.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Mzsj" />
+	<link rel="apple-touch-icon-precomposed" href="images/app.png">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="images/app.png">
+	<meta name="msapplication-TileColor" content="#0e90d2">
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<script src="js/respond.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/jquery.min.js"></script>
+	<!-- 手机页面要加载com设置页面高度，jgestures捕获触摸手势事件 -->
+	<script src="js/com.js"></script>
+	<script src="js/jgestures.min.js"></script>
+</head>
+
+<body>
+	<script>
+	function tabs(tabIndex){
+		$('.title span').eq(tabIndex).addClass('hover').siblings().removeClass('hover');
+		if($('.con p:visible').index() != tabIndex){
+			$('.con p:animated').stop();
+			$('.con p').hide().eq(tabIndex).fadeIn();
+		}
+	}
+	function carpos(tabIndex){
+		var carpos = [0,200,400];
+		$('.k_td').stop().animate({left:carpos[tabIndex] + 'px'},300);
+	}
+	$(function(){
+		//初始标记变量
+	    var isMove=false;
+		$('.con p').hide().eq(0).show();
+		$('.title span').mouseover(function(){
+			var IndexSpan = $(this).index();
+			$(this).addClass('hover').siblings().removeClass('hover');
+			carpos(IndexSpan);
+			if($('.con p:visible').index() != IndexSpan){
+				$('.con p:animated').stop();
+				$('.con p').hide().eq(IndexSpan).fadeIn();
+			}
+		});
+		var zzwz = 0; //最终位置
+		$('.k_td').mousedown(function(e){
+			// _w 外框 _x 外框横坐标 _y 外框竖坐标 _ml 鼠标横坐标 _mt 鼠标竖坐标 _n 内框
+			var _x = _w = _ml = _n = _nw = _nx = 0;
+			_w = $('.k').offset();
+			_n = $(this);
+			_nw = _n.offset();
+			_nx = _nw.left;
+			_x = _w.left;
+	        $(this).css('cursor','move');
+			$(this).css('opacity','.8');
+			//鼠标按下时位置
+			var _mstart = e.pageX;
+			// 开始拖动
+			$(this).mousemove(function(e){
+					_ml = e.pageX;
+					// _nx - _x = 鼠标按下时box的偏移量  
+					// _ml - _mstart = 鼠标的移动量，当向右移动量大于box与外框的最大距离（ 600 - (_nx - _x) ）时，停止，当向左移动量大于移动开始时偏移量时停止 _nx - _x
+					var isXR = 900 - (_nx - _x);
+					// 判断向右移动的最大距离
+					if (_ml - _mstart >= 0 &&_ml - _mstart <= isXR) {
+						zzwz = (_ml - _mstart) + (_nx - _x);
+						// _n.css('left',zzwz + 'px');
+						// console.log((_ml - _mstart) + (_nx - _x));
+					}
+					// console.log(_ml - _mstart);
+					// 判断向左移动的最大距离_nx - _x,偏移量为_mstart - _ml
+					var isXL = _nx - _x;
+					if (_mstart - _ml >= 0 && _mstart - _ml <= isXL) {
+						zzwz = (_nx - _x) - (_mstart - _ml);
+						// _n.css('left',zzwz + 'px');
+						// console.log((_ml - _mstart) + (_nx - _x));
+					}
+					_n.css('left',zzwz + 'px');
+					// 判断下边的tab显示哪个内容
+					if (zzwz<200 && zzwz >= 0) {tabs(0);};
+					if (zzwz<400 && zzwz >= 200) {tabs(1);};
+					if (zzwz >= 400) {tabs(2);};
+			}).mouseup(function(){
+				$(this).css('opacity','1');
+				$(this).unbind("mousemove");
+			}).mouseleave(function () {
+				// 离开时滚动到点上
+				if (zzwz<200 && zzwz >= 0) {carpos(0);};
+				if (zzwz<400 && zzwz >= 200) {carpos(1);};
+				if (zzwz >= 400) {carpos(2);};
+				$(this).css('opacity','1');
+				$(this).unbind("mousemove");
+			});
+		});
+		
+
+	})
+	</script>
+	<style>
+		.k {width: 1000px; height: 350px; margin: 100px auto; background: #ccc; position: relative; overflow: hidden;}
+		.k_td {background: red; width: 100px; height: 50px; position: absolute; left: 0; top:0; cursor: move;}
+		.box {width: 1000px; height: 100px; border: #eee solid 1px; background: #efefef; position: absolute; left: 0; top:250px;}
+		.title {background: #FFF;}
+		.title span {display: inline-block; font-size: 14px; width: 200px; font-weight: normal; padding: 0 5px; background: #eee; cursor: pointer; float: left;}
+		.title span.hover {background: #ddd;}
+		.con p {height: 300px; width: 500px; padding: 10px;}
+	</style>
+	<div class="k">
+		<div class="k_td"></div>
+		<div class="box">
+			<h1 class="title">
+				<span class="hover">tab_1</span>
+				<span>tab_2</span>
+				<span>tab_3</span>
+			</h1>
+			<div class="con">
+				<p>0000001</p>
+				<p>0000002</p>
+				<p>0000003</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
