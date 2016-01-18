@@ -1,0 +1,69 @@
+@charset "utf-8";
+/*作者(Author): 李潇喃    Website: www.muzisheji.com   QQ: 854378082*/
+*, *:before, *:after {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, audio, canvas, details, figcaption, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, summary, time, video {border:0;background:transparent;margin:0;padding:0;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section, blockquote {display:block;}
+table, tbody, tfoot, thead, tr, th,td {background:transparent;margin:0;padding:0;}
+nav ,ul {list-style:none;}
+ol {list-style:decimal;}
+blockquote:before, blockquote:after, q:before, q:after {content:none;}
+table {border-collapse:collapse;border-spacing:0;}
+hr {display:block;height:0px;border:0;border-top:1px solid #ccc;overflow:hidden; line-height:0px;}
+input ,select ,a img {vertical-align:middle;}
+.clearfix:after {content: ""; clear: both; height: 0px; overflow: hidden; display:block; visibility: hidden;}
+.clearfix { !zoom:1;}
+.overh {overflow: hidden;}
+.h_img {line-height: 0px; font-size: 0px;}
+a {color: #333; text-decoration: none;}
+a:hover {text-decoration: underline;}
+img {max-width: 98%; height: auto;}
+body {font-family:"微软雅黑","宋体","Arial","Verdana","sans-serif"; font-size: 1em; line-height: 2em; color: #232323; background: #FFF;}
+/*common*/
+.f_l {float: left;}
+.f_r {float: right;}
+.pr {position: relative;}
+.ps {position: absolute;}
+.m_a {margin: 0 auto;}
+.mt10 {margin-top: 10px;}
+.mt15 {margin-top: 15px;}
+.mt20 {margin-top: 20px;}
+.mb10 {margin-bottom: 10px;}
+.mb15 {margin-bottom: 15px;}
+.mb20 {margin-bottom: 20px;}
+.ml10 {margin-left: 10px;}
+.ml15 {margin-left: 15px;}
+.ml20 {margin-left: 20px;}
+.mr10 {margin-right: 10px;}
+.mr15 {margin-right: 15px;}
+.mr20 {margin-right: 20px;}
+.mlr10 {margin: 0 10px;}
+.mlr15 {margin: 0 15px;}
+.mlr20 {margin: 0 20px;}
+.mtb10 {margin: 10px 0;}
+.mtb15 {margin: 15px 0;}
+.mtb20 {margin: 20px 0;}
+.ptb10 {padding: 10px 0;}
+.ptb15 {padding: 15px 0;}
+.ptb20 {padding: 20px 0;}
+.plr10 {padding: 0 10px;}
+.plr15 {padding: 0 15px;}
+.plr20 {padding: 0 20px;}
+.pl10 {padding-left: 10px;}
+.pl15 {padding-left: 15px;}
+.pl20 {padding-left: 20px;}
+.pr10 {padding-right: 10px;}
+.pr15 {padding-right: 15px;}
+.pr20 {padding-right: 20px;}
+.pt10 {padding-top: 10px;}
+.pt15 {padding-top: 15px;}
+.pt20 {padding-top: 20px;}
+.pb10 {padding-bottom: 10px;}
+.pb15 {padding-bottom: 15px;}
+.pb20 {padding-bottom: 20px;}
+.wt49 {width: 49%;}
+.wt48 {width: 48%;}
+.wt1000 {width: 1000px;}
+.tc {text-align: center;}
+.tr {text-align: right;}
+.ti {text-indent: 2em;}
+/*end common*/

@@ -3,57 +3,198 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>index</title>
+	<title>转盘</title>
 	<meta name="author" content="李潇喃：www.muzisheji.com" />
 	<!-- IE最新兼容 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- 国产浏览器高速/微信开发不要用 -->
 	 <meta name="renderer" content="webkit">
-	
+	 
 	<!-- 移动设备禁止缩放 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- No Baidu Siteapp-->
 	<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="icon" type="image/png" href="images/favicon.png">
 
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="icon" sizes="192x192" href="app.png">
+	<link rel="icon" sizes="192x192" href="images/app.png">
 
 	<!-- Add to homescreen for Safari on iOS -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-title" content="Mzsj" />
-	<link rel="apple-touch-icon-precomposed" href="app.png">
+	<link rel="apple-touch-icon-precomposed" href="images/app.png">
 
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="app.png">
+	<meta name="msapplication-TileImage" content="images/app.png">
 	<meta name="msapplication-TileColor" content="#0e90d2">
-	<!--[if gt IE 9]>
-	<script src="html5.js"></script>
-	<script src="respond.js"></script>
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<script src="js/respond.js"></script>
 	<![endif]-->
-	 <link rel="stylesheet" href="reset.css">
-	
-	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		.pr {position: relative;}
+		.ps {position: absolute;}
+		.hidden {display: none;}
+		.box {margin: 100px auto; width: 1278px; height: 500px; background: #eee; overflow: hidden;}
+		.color_r {width: 893px; right: 0px; top: 0;}
+		.color_l {width: 237px; height: 238px; top: 30px; left: 30px;}
+		/*车*/
+		.color_r_2 {right: -825px; top: 110px; width:895px; height: 255px;}
+		.car_l_1 {left: 179px; bottom: 138px\0;}
+		.car_l_2 {left: 496px\9; bottom: 138px\9;}
+		:root .car_l_1 {left: 179px; bottom: 34px;}
+		:root .car_l_2 {left: 590px; bottom: 34px;}
+		/*color_bg*/
+		.color_bg {background: url(images/color_bg.png) left top no-repeat; width: 237px; height: 238px;}
+		.color_bg div {cursor: pointer; z-index: 2;}
+		.color_bg_1 {width: 100px; height: 100px; top: 35px; left: 6px;}
+		.color_bg_2 {width: 100px; height: 100px; top: 0px; left: 70px;}
+		.color_bg_3 {width: 100px; height: 100px; top: 35px; right: 6px;}
+		.color_bg_4 {width: 100px; height: 100px; bottom: 35px; right: 6px;}
+		.color_bg_5 {width: 100px; height: 100px; bottom: 0px; left: 70px;}
+		.color_bg_6 {width: 100px; height: 100px; bottom: 35px; left: 6px;}
+		/*转盘*/
+		.yuan {width: 153px; height: 153px; background: url(images/yuan.png) center center no-repeat; left: 42px; top: 42px;}
+		.color_l_1 {z-index: 1;}
+	</style>
+	<script src="js/jquery.min.js"></script>
+	<!-- 手机页面要加载com设置页面高度，jgestures捕获触摸手势事件 -->
+	<script src="js/jquery.rotate.js"></script>
 	<script>
+	function toRotate(angle){
+		$(".color_l_1").rotate({
+			animateTo:angle,
+		});
+	}
 	$(function(){
+		
+		// setInterval(function(){
+		// 	if (angle < 360)
+		// 	{
+		// 		angle+=60;
+		// 	}
+		// 	else
+		// 	{
+		// 		angle = 0;
+		// 	};
 
-	})
+		// 	$(".color_l_1").rotate(angle);
+		// },1000);
+		
+		// 加载完成后开始动画
+		$(window).bind('load',function(){
+			// 车动画
+			$('.color_r_2').animate({right:'25px'},1500);
+			var angle2 = 0;
+			var cl = setInterval(function(){
+				$(".car_l_1 ,.car_l_2").rotate({
+					angle:angle2,
+					animateTo:angle2-10,
+				});
+				angle2-=10;
+			},30);
+			setTimeout(function(){
+				clearInterval(cl);
+				$(".car_l_1 ,.car_l_2").fadeOut();
+			}, 1500);
+			// 开始转盘
+			setTimeout(function(){
+				rotation();
+			},2500);
+		});
+		// 自动转盘
+		var angle = 0;
+		var CIndex = 1;
+		var rotation = function (){
+			if (angle < 360) {
+				$(".color_l_1").rotate({
+					duration:2000,
+					angle:angle,
+					animateTo:angle+60,
+					callback: rotation
+				});
+				angle+=60;
+				if(CIndex == 6)
+				{
+					CIndex = 1;
+				}
+				else
+				{
+					CIndex += 1;
+				}
+				$('.cars').attr('src','images/car_' + CIndex + '.png');
+			};
+		}
+		// 转盘点击
+		$(".color_bg_1").rotate(-60);
+		$(".color_bg_3").rotate(60);
+		$(".color_bg_4").rotate(-45);
+		$(".color_bg_6").rotate(45);
+		$('.color_bg_1').click(function(){
+			toRotate(300);
+			$('.cars').attr('src','images/car_6.png');
+		});
+		$('.color_bg_2').click(function(){
+			toRotate(360);
+			$('.cars').attr('src','images/car_1.png');
+		});
+		$('.color_bg_3').click(function(){
+			toRotate(60);
+			$('.cars').attr('src','images/car_2.png');
+		});
+		$('.color_bg_4').click(function(){
+			toRotate(120);
+			$('.cars').attr('src','images/car_3.png');
+		});
+		$('.color_bg_5').click(function(){
+			toRotate(180);
+			$('.cars').attr('src','images/car_4.png');
+		});
+		$('.color_bg_6').click(function(){
+			toRotate(240);
+			$('.cars').attr('src','images/car_5.png');
+		});
+	});
 	</script>
 </head>
 
 <body>
-	<style>
-	.action_top {width: 300px; height: 20px; background: red; margin-top: 200px; margin-left: 200px; transform:skewY(-10deg); transform-origin:left bottom; animation:actionani 0.5s linear both;}
-	@keyframes actionani{
-		0%{}
-		100%{transform:skewY(0);}
-	}
-	</style>
-	<div class="action_top"></div>
+	<div class="box pr">
+		<!-- 转盘 -->
+		<div class="color_l ps">
+			<div class="color_bg pr">
+				<div class="color_bg_1 ps"></div>
+				<div class="color_bg_2 ps"></div>
+				<div class="color_bg_3 ps"></div>
+				<div class="color_bg_4 ps"></div>
+				<div class="color_bg_5 ps"></div>
+				<div class="color_bg_6 ps"></div>
+			</div>
+			<div class="yuan ps">
+				<img src="images/jt.png" width="153" height="153" alt="" class="color_l_1 ps">
+			</div>
+		</div>
+		<!-- 车 -->
+		<div class="color_r ps">
+			<img src="images/product_06.png" class="color_r_1 ps" alt="">
+			<div class="color_r_2 pr">
+				<img src="images/car_1.png" alt="" class="cars">
+				<img src="images/car_l.png" alt="" class="car_l_1 ps"><img src="images/car_l.png" alt="" class="car_l_2 ps">
+				<div class="hidden">
+					<img src="images/car_2.png" alt="">
+					<img src="images/car_3.png" alt="">
+					<img src="images/car_4.png" alt="">
+					<img src="images/car_5.png" alt="">
+					<img src="images/car_6.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
