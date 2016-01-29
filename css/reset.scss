@@ -20,13 +20,34 @@
 	.h_img {line-height: 0px; font-size: 0px;}
 	a {color: #313131; text-decoration: none;}
 	a:hover {text-decoration: none;}
-	html {font-size:14px;}
 	body {font-family:"微软雅黑","宋体","Arial","Verdana","sans-serif"; font-size: 1em; line-height: 2em; color: #313131; background: #FFF;}
 	.f_l {float: left;}
 	.f_r {float: right;}
 	.ps {position: absolute;}
 	.pr {position: relative;}
 	.hidden {display:none;}
+}
+// 根据不同dpr来转换字体大小或者
+@mixin pxtpx($n,$p){
+    #{$n} : round($p / 2) * 1px;
+    [data-dpr="2"] & {
+        #{$n}: $p * 1px;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        #{$n}: round($p * 2.5 / 2) * 1px;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        #{$n}: round($p * 2.75 / 2) * 1px;
+    }
+    [data-dpr="3"] & {
+        #{$n}: round($p / 2 * 3) * 1px
+    }
+    // for 三星note4
+    [data-dpr="4"] & {
+        #{$n}: $p * 2px;
+    }
 }
 // 字体大小及行高
 @mixin fs($n,$m : 2){
@@ -42,3 +63,7 @@ $m414:(414px/550px);
 	开始样式编写
 */
 @include start;
+.boxss {
+	@include pxtpx(font-size,30);
+}
+

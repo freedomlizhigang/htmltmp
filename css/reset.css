@@ -74,9 +74,6 @@ a {
 a:hover {
   text-decoration: none; }
 
-html {
-  font-size: 14px; }
-
 body {
   font-family: "微软雅黑","宋体","Arial","Verdana","sans-serif";
   font-size: 1em;
@@ -98,5 +95,18 @@ body {
 
 .hidden {
   display: none; }
+
+.boxss {
+  font-size: 15px; }
+  [data-dpr="2"] .boxss {
+    font-size: 30px; }
+  [data-dpr="2.5"] .boxss {
+    font-size: 38px; }
+  [data-dpr="2.75"] .boxss {
+    font-size: 41px; }
+  [data-dpr="3"] .boxss {
+    font-size: 45px; }
+  [data-dpr="4"] .boxss {
+    font-size: 60px; }
 
 /*# sourceMappingURL=reset.css.map */
